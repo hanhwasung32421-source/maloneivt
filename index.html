@@ -338,7 +338,7 @@
               투자결과에 따라 투자원금의 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.
               본 사이트의 모든 정보는 투자판단의 참고자료이며, 확정 수익을 보장하지 않습니다.
             </div>
-            <div class="mt-10 text-xs" style="color: rgba(91,107,133,.85);">© <span id="year"></span> 말론투자. All Rights Reserved.</div>
+            <div class="mt-10 text-xs" style="color: rgba(91,107,133,.85);">© <span id="year"></span> 말론투자. All Rights Reserved. · <span id="version"></span></div>
           </div>
         </div>
       </div>
@@ -392,6 +392,19 @@
         }
       }
       loadNotices();
+
+      // footer version
+      async function loadVersion() {
+        try {
+          const res = await fetch("./data/version.json", { cache: "no-store" });
+          const v = await res.json();
+          const el = document.getElementById("version");
+          if (el && v && v.date && v.build) {
+            el.textContent = "v" + String(v.date).replaceAll("-", ".") + "-" + v.build;
+          }
+        } catch (e) {}
+      }
+      loadVersion();
     </script>
   </body>
 </html>
