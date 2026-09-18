@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">말론투자 로고 아이콘 4안</title>
+  <desc id="desc">가느다란 선과 날카로운 중앙 각으로 구성한 미니멀 M 로고</desc>
+  <path d="M130 382V136" stroke="#151515" stroke-width="32" stroke-linecap="round"/>
+  <path d="M130 136L256 302" stroke="#151515" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 302L382 136" stroke="#CC2230" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M382 136V382" stroke="#151515" stroke-width="32" stroke-linecap="round"/>
+  <circle cx="256" cy="302" r="12" fill="#CC2230"/>
+</svg>
+

@@ -1,0 +1,276 @@
+.break-keep { word-break: keep-all; }
+
+/*
+  말론투자 공통 디자인 시스템
+  - 여의도 투자그룹 레퍼런스의 "프리미엄/정돈된 섹션" 분위기를 참고하되, 그대로 복제하지 않고 재설계
+  - 목표: 덜 심플하고, 섹션이 풍부하며, 상업용 랜딩 페이지처럼 보이는 구성
+*/
+
+:root {
+  --ink: #071125;              /* deep navy */
+  --muted: #5b6b85;            /* slate */
+  --line: rgba(7, 17, 37, .12);
+  --bg: #ffffff;
+  --bg-soft: #f7f8fb;
+
+  --accent: #c81e1e;           /* premium red */
+  --gold: #f59e0b;             /* gold */
+  /* backward-compat vars (older pages/inline styles) */
+  --blue: #c81e1e;
+  --cyan: #f59e0b;
+  --shadow: 0 18px 55px rgba(7, 17, 37, .10);
+}
+
+/* Background */
+.site-bg {
+  background:
+    radial-gradient(1100px 520px at 10% 0%, rgba(245, 158, 11, .10), transparent 55%),
+    radial-gradient(900px 520px at 92% 0%, rgba(200, 30, 30, .08), transparent 55%),
+    linear-gradient(180deg, #fff 0%, var(--bg-soft) 80%, #fff 100%);
+}
+
+/* backward-compat */
+.mesh-bg {
+  background:
+    radial-gradient(1100px 520px at 10% 0%, rgba(245, 158, 11, .10), transparent 55%),
+    radial-gradient(900px 520px at 92% 0%, rgba(200, 30, 30, .08), transparent 55%),
+    linear-gradient(180deg, #fff 0%, var(--bg-soft) 80%, #fff 100%);
+}
+
+/* Hero background image */
+.hero-bg {
+  background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+.glass-header {
+  background: rgba(255,255,255,.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(7, 17, 37, .06);
+}
+
+.logo-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(135deg, var(--ink), var(--accent));
+  box-shadow: 0 18px 46px rgba(7, 17, 37, .18);
+}
+
+.logo-icon{
+  width: 40px;
+  height: 40px;
+  display:block;
+  filter: drop-shadow(0 10px 20px rgba(7,17,37,.12));
+}
+
+.logo-icon--sm{
+  width: 36px;
+  height: 36px;
+}
+
+.nav-link {
+  padding: 10px 12px;
+  border-radius: 999px;
+  color: rgba(7, 17, 37, .78);
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+}
+.nav-link:hover {
+  background: rgba(7, 17, 37, .06);
+  color: rgba(7, 17, 37, .94);
+  transform: translateY(-1px);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  box-shadow: 0 18px 46px rgba(200, 30, 30, .16);
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.05);
+  box-shadow: 0 22px 54px rgba(200, 30, 30, .20);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 18px;
+  color: rgba(7, 17, 37, .92);
+  font-weight: 900;
+  background: rgba(255, 255, 255, .92);
+  border: 1px solid rgba(7, 17, 37, .12);
+  box-shadow: 0 14px 36px rgba(7, 17, 37, .10);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  border-color: rgba(200, 30, 30, .22);
+  box-shadow: 0 18px 46px rgba(7, 17, 37, .14);
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 18px;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(180deg, #0b152e, #071125);
+  box-shadow: 0 16px 44px rgba(7, 17, 37, .22);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-dark:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 54px rgba(7, 17, 37, .26);
+}
+
+/* Cards */
+.card-soft {
+  background: rgba(255, 255, 255, .92);
+  border: 1px solid rgba(7, 17, 37, .10);
+  box-shadow: var(--shadow);
+}
+
+.card-border { position: relative; overflow: hidden; }
+.card-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(600px 240px at 10% 0%, rgba(245,158,11,.18), transparent 60%),
+              radial-gradient(600px 240px at 90% 0%, rgba(200,30,30,.16), transparent 60%);
+  opacity: .55;
+  pointer-events: none;
+  filter: blur(18px);
+}
+.card-border > * { position: relative; }
+
+.lift { transition: transform .18s ease, box-shadow .18s ease; }
+.lift:hover { transform: translateY(-3px); box-shadow: 0 30px 90px rgba(7, 17, 37, .14); }
+
+/* Section titles */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(91, 107, 133, .95);
+}
+
+.section-title {
+  color: var(--ink);
+}
+
+/* Form */
+.form-input {
+  width: 100%;
+  border: 1px solid rgba(7, 17, 37, .12);
+  border-radius: 14px;
+  padding: 14px 14px;
+  background: rgba(255,255,255,.94);
+  outline: none;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.form-input:focus {
+  border-color: rgba(200, 30, 30, .35);
+  box-shadow: 0 0 0 6px rgba(200, 30, 30, .10);
+}
+
+/* Notice banner */
+.notice-banner {
+  border: 1px solid rgba(200, 30, 30, .18);
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,243,243,.85));
+}
+.notice-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: rgba(200, 30, 30, .10);
+  color: rgba(200, 30, 30, .95);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: .10em;
+}
+.notice-cta {
+  border-radius: 14px;
+  background: rgba(200, 30, 30, .95);
+  color: #fff;
+  font-weight: 900;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+/* Hero notice (reference-like, dark glass bar) */
+.notice-hero{
+  background: rgba(7, 17, 37, .78);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 26px 90px rgba(7, 17, 37, .45);
+  backdrop-filter: blur(14px);
+}
+.notice-hero__label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  font-weight: 900;
+  letter-spacing:.18em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.notice-hero__icon{
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(200,30,30,.95);
+  display:grid;
+  place-items:center;
+  box-shadow: 0 12px 26px rgba(200,30,30,.22);
+}
+.notice-hero__text{
+  color: rgba(255,255,255,.82);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.notice-hero__highlight{
+  color: var(--gold);
+  font-weight: 900;
+}
+
+/* Small badge (pinned) */
+.badge-pin {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(200,30,30,.96), rgba(245,158,11,.94));
+  box-shadow: 0 10px 22px rgba(200,30,30,.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary, .btn-secondary, .btn-dark, .nav-link, .lift { transition: none !important; }
+}

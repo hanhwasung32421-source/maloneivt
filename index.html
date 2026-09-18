@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>말론투자</title>
+    <meta name="description" content="말론투자 | 유사투자자문업 고지 기반의 읽기 전용(공지) 사이트" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Noto Sans KR", "ui-sans-serif", "system-ui", "Apple SD Gothic Neo", "Malgun Gothic"] },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./assets/clone.css" />
+  </head>
+
+  <body class="font-sans site-bg text-slate-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <div class="glass-header">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+          <a class="flex items-center gap-3" href="./">
+            <img class="logo-icon logo-icon--sm" src="./assets/malon-logo-icon-v4.svg" alt="말론투자 로고" />
+            <div class="text-2xl font-black tracking-tight">말론투자</div>
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-2 text-sm font-black">
+            <a class="nav-link" href="./company/">회사 소개</a>
+            <a class="nav-link" href="./business/">서비스</a>
+            <a class="nav-link" href="#vip">VIP 서비스</a>
+            <a class="nav-link" href="./support/notice/">공지사항</a>
+            <a class="btn-primary" href="#apply">상담 문의</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-bg relative pt-[76px]">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#071125]/85 via-[#071125]/55 to-[#071125]/15"></div>
+      <div class="relative max-w-6xl mx-auto px-5 pt-4 pb-16 md:pt-6 md:pb-24">
+        <!-- 첫 화면 공지(양방향 소통 제한) -->
+        <div class="notice-hero rounded-3xl px-6 py-5 md:px-7 md:py-6 mb-10">
+          <div class="notice-hero__label">
+            <span class="notice-hero__icon" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                <path d="M12 7v7" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M12 17.5h.01" stroke="white" stroke-width="3.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>NOTICE</span>
+          </div>
+          <div class="mt-3 notice-hero__text break-keep">
+            <p>
+              2024년 8월 14일부터 시행된 자본시장법에 따라, 유사투자자문업은 양방향 소통(ex.댓글)을 이용한 영업 활동이 허용되지 않습니다.
+            </p>
+            <p class="mt-1">
+              이에 따라, 불특정 다수를 대상으로 단방향 채널만을 통해 개별성이 없는 조언만 할 수 있습니다.
+            </p>
+            <p class="mt-3 notice-hero__highlight">
+              따라서 양방향 소통이 불가하기에, 회원은 본 홈페이지에 글을 쓸 수 없습니다.
+            </p>
+            <p class="mt-2 text-white/80 font-bold">
+              ※ 금융 투자 상품이나 특정 주식에 대한 판단 및 가치에 대한 문의는 불가합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white border border-white/15 rounded-full px-4 py-2 text-xs font-black">
+              <span class="w-2 h-2 rounded-full" style="background: linear-gradient(135deg, var(--accent), var(--gold));"></span>
+              <span>YEARS OF EXPERIENCE · PREMIUM ADVISORY</span>
+            </div>
+
+            <h1 class="mt-6 text-4xl md:text-6xl font-black leading-[1.03] text-white break-keep">
+              고객의 선택이
+              <span class="text-white">말론투자</span>가 되도록
+            </h1>
+            <p class="mt-5 text-white/80 text-base md:text-lg leading-relaxed max-w-2xl break-keep">
+              불필요한 장식은 줄이고, 신뢰를 만드는 구성(서비스 · 특징 · 등급 · 고지 · 공지)을 한 화면에서 정돈했습니다.
+            </p>
+
+            <div class="mt-9 flex flex-col sm:flex-row gap-3">
+              <a class="btn-primary w-full sm:w-auto" href="./company/">회사 소개</a>
+              <a class="btn-secondary w-full sm:w-auto" href="./support/notice/">공지사항 바로가기</a>
+            </div>
+
+            <div class="mt-10 grid sm:grid-cols-3 gap-3">
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-white/90">
+                <div class="text-xs font-black tracking-widest uppercase">서비스</div>
+                <div class="mt-2 text-sm text-white/75">구조화된 정보 제공</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-white/90">
+                <div class="text-xs font-black tracking-widest uppercase">운영</div>
+                <div class="mt-2 text-sm text-white/75">공지 기반(읽기 전용)</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/5 p-4 text-white/90">
+                <div class="text-xs font-black tracking-widest uppercase">문의</div>
+                <div class="mt-2 text-sm text-white/75">하단 신청서 접수</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-5">
+            <div class="card-soft card-border rounded-3xl p-7 md:p-8">
+              <div class="eyebrow">NOTICE</div>
+              <div class="mt-2 text-2xl font-black section-title break-keep">읽기 전용 운영 안내</div>
+              <p class="mt-4 text-sm leading-relaxed" style="color: var(--muted);">
+                유사투자자문업을 영위함으로써 홈페이지 내 양방향소통을 위한 창구는 없습니다. 읽기 전용 홈페이지 입니다.
+              </p>
+              <div class="mt-6 grid gap-3">
+                <a class="btn-primary w-full" href="./support/notice/">공지사항</a>
+                <a class="btn-dark w-full" href="#apply">상담 문의</a>
+              </div>
+              <div class="mt-6 rounded-2xl border p-5 bg-white/70" style="border-color: var(--line)">
+                <div class="text-xs font-black tracking-widest uppercase" style="color: var(--muted);">Company</div>
+                <div class="mt-2 text-sm" style="color: var(--muted);">상호명: 말론투자</div>
+                <div class="text-sm" style="color: var(--muted);">사업자등록번호: 0000-0000-0000</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (6 steps) -->
+    <section id="services" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="text-center">
+          <div class="eyebrow">SERVICES</div>
+          <h2 class="mt-3 text-3xl md:text-5xl font-black section-title break-keep">끝없는 투자 연구로<br />편안한 투자 환경을 만듭니다</h2>
+          <p class="mt-5 max-w-3xl mx-auto text-base leading-relaxed" style="color: var(--muted);">
+            레퍼런스의 “서비스” 섹션 구성을 참고해, 방문자가 단번에 이해하도록 6단계로 구조를 정리했습니다.
+          </p>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">01</div>
+            <div class="mt-2 text-xl font-black section-title">종목 발굴 및 검토</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">근거/조건을 분리해 이해 가능하게 정리합니다.</div>
+          </div>
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">02</div>
+            <div class="mt-2 text-xl font-black section-title">국내외 이슈/시황 체크</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">시장 흐름을 핵심만 요약해 전달합니다.</div>
+          </div>
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">03</div>
+            <div class="mt-2 text-xl font-black section-title">빅데이터 정보 수집</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">데이터 기반의 정리 방식으로 일관성을 유지합니다.</div>
+          </div>
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">04</div>
+            <div class="mt-2 text-xl font-black section-title">전문가 분석</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">해석과 한계를 함께 고지합니다.</div>
+          </div>
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">05</div>
+            <div class="mt-2 text-xl font-black section-title">고객중심 포트폴리오 구성</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">원칙과 범위를 명확히 합니다.</div>
+          </div>
+          <div class="card-soft card-border rounded-3xl p-7 lift">
+            <div class="eyebrow">06</div>
+            <div class="mt-2 text-xl font-black section-title">수익/리스크 관리</div>
+            <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">손실 시나리오와 대응 원칙을 함께 안내합니다.</div>
+          </div>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a class="btn-secondary" href="./business/">서비스 상세 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP -->
+    <section id="vip" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5">
+            <div class="eyebrow">VIP SOLUTION</div>
+            <h2 class="mt-3 text-3xl md:text-5xl font-black section-title break-keep">VIP 컨설팅 서비스 안내</h2>
+            <p class="mt-5 text-base leading-relaxed" style="color: var(--muted);">
+              레퍼런스의 “혜택/등급” 구조를 참고해, 페이지가 비어보이지 않도록 정보 밀도를 높였습니다.
+            </p>
+            <div class="mt-7 grid gap-3">
+              <a class="btn-primary w-full" href="#apply">무료체험/상담 문의</a>
+              <a class="btn-secondary w-full" href="./support/notice/">공지사항</a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+            <div class="card-soft card-border rounded-3xl p-6 lift">
+              <div class="eyebrow">SILVER VIP</div>
+              <div class="mt-2 text-lg font-black section-title">소액 투자자 첫걸음</div>
+              <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">
+                기본 정보/흐름 정리에 초점을 맞춘 구성(예시). 실제 서비스는 공지로 안내합니다.
+              </div>
+            </div>
+            <div class="card-soft card-border rounded-3xl p-6 lift">
+              <div class="eyebrow">GOLD VIP</div>
+              <div class="mt-2 text-lg font-black section-title">목표 기반 운영</div>
+              <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">
+                목표/범위를 명확히 하고, 체크리스트형 정보로 안내합니다(예시).
+              </div>
+            </div>
+            <div class="card-soft card-border rounded-3xl p-6 lift">
+              <div class="eyebrow">PLATINUM VIP</div>
+              <div class="mt-2 text-lg font-black section-title">심화 리서치 중심</div>
+              <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">
+                리스크/가정/조건을 분리해 전달하는 심화형 구성(예시).
+              </div>
+            </div>
+            <div class="card-soft card-border rounded-3xl p-6 lift">
+              <div class="eyebrow">DIAMOND VIP</div>
+              <div class="mt-2 text-lg font-black section-title">고액 운용자 전용</div>
+              <div class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">
+                운용 원칙과 관리 방식 중심으로 구조화해 안내합니다(예시).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notice policy (image content → rewritten) -->
+    <section class="py-10 md:py-14">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="notice-banner card-border rounded-3xl p-7 md:p-10">
+          <div class="notice-chip"><span class="w-2 h-2 rounded-full bg-red-600"></span><span>NOTICE</span></div>
+          <h3 class="mt-4 text-2xl md:text-3xl font-black section-title break-keep">양방향 소통 제한 안내</h3>
+          <p class="mt-4 text-sm leading-relaxed" style="color: var(--muted);">
+            2024년 8월 14일부터 시행된 자본시장법에 따라, 유사투자자문업은 양방향 소통(ex.댓글)을 이용한 영업 활동이 허용되지 않습니다.
+            이에 따라, 불특정 다수를 대상으로 단방향 채널만을 통해 개별성이 없는 조언만 할 수 있습니다.
+          </p>
+          <div class="mt-5 notice-cta break-keep">회원은 본 게시판에 글 작성 및 댓글을 작성할 수 없습니다.</div>
+          <p class="mt-4 text-sm font-black text-red-700 break-keep">※ 금융 투자 상품이나 특정 주식에 대한 판단 및 가치에 대한 문의는 불가합니다.</p>
+          <p class="mt-3 text-xs break-keep" style="color: var(--muted);">
+            (운영자는 공지사항을 등록할 수 있으며, 방문자는 열람만 가능합니다.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notice preview -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <div class="eyebrow">BOARD</div>
+            <h3 class="mt-3 text-3xl font-black section-title">공지사항</h3>
+            <p class="mt-3 text-sm" style="color: var(--muted);">최신 공지 일부를 메인에서 미리 보여줍니다.</p>
+          </div>
+          <a class="btn-secondary" href="./support/notice/">더보기</a>
+        </div>
+
+        <div id="noticePreview" class="mt-8 grid md:grid-cols-2 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- Apply / Contact -->
+    <section id="apply" class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="grid lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-5 card-soft card-border rounded-3xl p-7 md:p-10">
+            <div class="eyebrow">APPLY</div>
+            <h3 class="mt-3 text-3xl font-black section-title break-keep">상담 문의 신청</h3>
+            <p class="mt-5 text-sm leading-relaxed" style="color: var(--muted);">
+              정적 사이트 샘플 폼입니다. 실제 접수/회신은 운영 방식에 맞춰 연동(폼/CRM/API)이 필요합니다.
+            </p>
+            <div class="mt-7 grid gap-3">
+              <a class="btn-secondary w-full" href="./support/notice/">공지 먼저 확인하기</a>
+              <a class="btn-dark w-full" href="./company/">회사 소개 보기</a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 card-soft card-border rounded-3xl p-7 md:p-10">
+            <form id="applyForm" class="grid gap-4" onsubmit="return false;">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <label class="block">
+                  <div class="text-sm font-black section-title">이름</div>
+                  <input class="form-input mt-2" placeholder="홍길동" />
+                </label>
+                <label class="block">
+                  <div class="text-sm font-black section-title">휴대전화번호</div>
+                  <input class="form-input mt-2" placeholder="010-0000-0000" />
+                </label>
+              </div>
+              <label class="block">
+                <div class="text-sm font-black section-title">문의 내용</div>
+                <textarea class="form-input mt-2" rows="6" placeholder="문의 내용을 입력하세요."></textarea>
+              </label>
+              <label class="flex items-start gap-3 text-sm" style="color: var(--muted);">
+                <input type="checkbox" class="mt-1" />
+                <span>개인정보 수집 및 이용에 동의합니다. (샘플)</span>
+              </label>
+              <button type="button" class="btn-primary w-full" id="applyBtn">신청하기(샘플)</button>
+              <p class="text-xs break-keep" style="color: var(--muted);">
+                회원가입 기능은 제공하지 않습니다. 회원/방문자는 글 작성 및 댓글 작성이 불가하며, 운영자만 공지사항을 등록합니다.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t" style="border-color: var(--line); background: rgba(255,255,255,.80); backdrop-filter: blur(10px);">
+      <div class="max-w-6xl mx-auto px-5 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="eyebrow">Customer Center</div>
+            <div class="mt-3 text-2xl font-black section-title">0000-0000-0000</div>
+            <div class="mt-1 text-sm" style="color: var(--muted);">운영시간: AM 09:00 ~ PM 06:00</div>
+          </div>
+          <div class="md:col-span-2">
+            <div class="eyebrow">Company Information</div>
+            <div class="mt-5 grid md:grid-cols-2 gap-4 text-sm" style="color: var(--muted);">
+              <div>상호명: 말론투자</div>
+              <div>대표자: 0000</div>
+              <div>사업자등록번호: 0000-0000-0000</div>
+              <div>본사주소: 0000</div>
+              <div>이메일: 0000@0000.co.kr</div>
+              <div>업무시간: 평일 09:00 - 18:00</div>
+            </div>
+            <div class="mt-7 text-xs break-keep" style="color: var(--muted);">
+              말론투자는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자상담과 자금운용이 불가능합니다.
+              투자결과에 따라 투자원금의 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.
+              본 사이트의 모든 정보는 투자판단의 참고자료이며, 확정 수익을 보장하지 않습니다.
+            </div>
+            <div class="mt-10 text-xs" style="color: rgba(91,107,133,.85);">© <span id="year"></span> 말론투자. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // year
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      // apply button (sample)
+      document.getElementById("applyBtn").addEventListener("click", () => {
+        alert("샘플 폼입니다. 실제 접수는 연동이 필요합니다.");
+      });
+
+      // notice preview
+      async function loadNotices() {
+        try {
+          const res = await fetch("./data/notices.json", { cache: "no-store" });
+          const list = await res.json();
+          const wrap = document.getElementById("noticePreview");
+          if (!wrap) return;
+          const items = (Array.isArray(list) ? list : []).slice(0, 2);
+
+          if (!items.length) {
+            wrap.innerHTML = '<div class="card-soft card-border rounded-3xl p-7" style="color: var(--muted);">등록된 공지사항이 없습니다.</div>';
+            return;
+          }
+
+          wrap.innerHTML = items
+            .map((n) => {
+              const date = String(n.date || "").replaceAll("-", ".");
+              const pin = n.pinned ? '<span class="badge-pin">고정</span>' : "";
+              const href = "./support/notice/detail.html?id=" + encodeURIComponent(n.id || "");
+              return `
+                <a class="card-soft card-border rounded-3xl p-7 lift block" href="${href}">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="text-lg font-black section-title break-keep">${(n.title || "(제목 없음)")}</div>
+                      <div class="mt-2 text-xs" style="color: var(--muted);">${date} · ID ${(n.id || "")}</div>
+                    </div>
+                    ${pin}
+                  </div>
+                  <div class="mt-5 text-sm" style="color: var(--muted);">자세히 보기</div>
+                </a>
+              `;
+            })
+            .join("");
+        } catch (e) {
+          const wrap = document.getElementById("noticePreview");
+          if (wrap) wrap.innerHTML = '<div class="card-soft card-border rounded-3xl p-7" style="color: var(--muted);">공지 데이터를 불러오지 못했습니다.</div>';
+        }
+      }
+      loadNotices();
+    </script>
+  </body>
+</html>

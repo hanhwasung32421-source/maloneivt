@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>대표인사말 | 말론투자</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = { theme: { extend: { fontFamily: { sans: ["Noto Sans KR", "ui-sans-serif", "system-ui"] } } } };
+    </script>
+    <link rel="stylesheet" href="../../assets/clone.css" />
+  </head>
+  <body class="font-sans mesh-bg text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <div class="glass-header">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+          <a class="flex items-center gap-3" href="../../">
+            <img class="logo-icon logo-icon--sm" src="../../assets/malon-logo-icon-v4.svg" alt="말론투자 로고" />
+            <div class="text-2xl font-black tracking-tight">말론투자</div>
+          </a>
+          <nav class="hidden md:flex items-center gap-2 text-sm font-bold">
+            <a class="nav-link" href="../../">홈</a>
+            <a class="nav-link" href="../">회사소개</a>
+            <a class="nav-link" href="../../business/">사업영역</a>
+            <a class="nav-link" href="../../support/">고객지원</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-[73px] max-w-6xl mx-auto px-5 py-14 md:py-20">
+      <div class="card-soft card-border rounded-3xl p-7 md:p-10">
+        <div class="text-xs font-black tracking-widest uppercase" style="color: var(--muted);">Greeting</div>
+        <h1 class="text-3xl md:text-4xl font-black mt-3 break-keep" style="color: var(--ink);">대표인사말</h1>
+        <p class="mt-6 text-base leading-relaxed" style="color: var(--muted);">
+          말론투자는 “잘 보이는 수익”보다 “잘 설명되는 의사결정”을 우선합니다. 데이터와 가정, 리스크를 분리해 전달하고,
+          불확실성을 숨기지 않는 방식으로 안내하겠습니다.
+        </p>
+        <p class="mt-4 text-base leading-relaxed" style="color: var(--muted);">
+          유사투자자문업을 영위함으로써 홈페이지 내 양방향소통을 위한 창구는 없습니다. 읽기 전용 홈페이지 입니다.
+        </p>
+        <p class="mt-8 font-bold" style="color: var(--ink);">대표 0000</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a class="btn-primary w-full sm:w-auto" href="../../support/notice/">공지사항</a>
+          <a class="btn-secondary w-full sm:w-auto" href="../">회사소개로</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t" style="border-color: var(--line); background: rgba(255,255,255,.70); backdrop-filter: blur(10px);">
+      <div class="max-w-6xl mx-auto px-5 py-10">
+        <div class="text-xs" style="color: rgba(91,107,133,.85);">© <span id="y"></span> 말론투자. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

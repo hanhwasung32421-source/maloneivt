@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>보도자료 | 말론투자</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = { theme: { extend: { fontFamily: { sans: ["Noto Sans KR", "ui-sans-serif", "system-ui"] } } } };
+    </script>
+    <link rel="stylesheet" href="../../assets/clone.css" />
+  </head>
+  <body class="font-sans mesh-bg text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <div class="glass-header">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+          <a class="flex items-center gap-3" href="../../">
+            <img class="logo-icon logo-icon--sm" src="../../assets/malon-logo-icon-v4.svg" alt="말론투자 로고" />
+            <div class="text-2xl font-black tracking-tight">말론투자</div>
+          </a>
+          <nav class="hidden md:flex items-center gap-2 text-sm font-bold">
+            <a class="nav-link" href="../../">홈</a>
+            <a class="nav-link" href="../../company/">회사소개</a>
+            <a class="nav-link" href="../../business/">사업영역</a>
+            <a class="nav-link" href="../">고객지원</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-[73px] max-w-6xl mx-auto px-5 py-14 md:py-20">
+      <div class="card-soft card-border rounded-3xl p-7 md:p-10">
+        <div class="text-xs font-black tracking-widest uppercase" style="color: var(--muted);">Press</div>
+        <h1 class="text-3xl md:text-4xl font-black mt-3" style="color: var(--ink);">보도자료</h1>
+        <p class="mt-4 text-sm leading-relaxed" style="color: var(--muted);">현재는 샘플 페이지입니다.</p>
+
+        <div class="mt-8 rounded-2xl border p-6 bg-white/70" style="border-color: var(--line); color: var(--muted);">
+          등록된 보도자료가 없습니다.
+        </div>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-3">
+          <a class="btn-primary w-full sm:w-auto" href="../notice/">공지사항</a>
+          <a class="btn-secondary w-full sm:w-auto" href="../">고객지원으로</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t" style="border-color: var(--line); background: rgba(255,255,255,.70); backdrop-filter: blur(10px);">
+      <div class="max-w-6xl mx-auto px-5 py-10">
+        <div class="text-xs" style="color: rgba(91,107,133,.85);">© <span id="y"></span> 말론투자. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
