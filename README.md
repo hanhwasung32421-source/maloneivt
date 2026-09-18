@@ -24,4 +24,11 @@
 
 ## 스타일/폰트
 - 폰트: Google Fonts `Noto Sans KR`
-- UI: Tailwind CDN(`https://cdn.tailwindcss.com`) 기반 + `assets/clone.css` 공통 디자인 시스템
+- UI: Tailwind CDN(`https://cdn.tailwindcss.com`) 기반 + `assets/css/clone.css` 공통 디자인 시스템
+
+## 폴더 구조
+- `assets/css/` : 공통 스타일시트(`clone.css`)
+- `assets/js/` : 공통 스크립트(`notice.js`)
+- `assets/images/` : 로고 등 이미지
+- `assets/_archive/` : 미사용으로 확인된 과거 파일 보관(`styles.css`, `app.js`) — 배포에서 제외됨(`.vercelignore`)
+- `docs/dev-notes/` : 개발 과정 대화 백업 등 배포와 무관한 문서 — 배포에서 제외됨(`.vercelignore`)
